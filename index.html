@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sehat Bersama - Solusi Sehat Anda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SEHAT BERSAMA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#articles">Artikel Kesehatan</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Meningkatkan Kualitas Hidup Melalui Kesehatan Optimal</h2>
+        <p>Temukan informasi kesehatan terpercaya dan konsultasi dengan para ahli medis di sini.</p>
+        <a href="#services" class="btn">Pelajari Layanan Kami</a>
+
+        <!-- Pesan Terima Kasih -->
+        <div id="thankyou-message" class="thankyou hidden">
+            <p>Terima kasih! Pesan Anda telah berhasil dikirim.</p>
+        </div>
+    </section>
+
+    <!-- Artikel Kesehatan Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>Artikel Kesehatan Terbaru</h2>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="2j.jpg" alt="Artikel 1">
+                    <h3>Cara Mencegah Asam Lambung yang Suka Kumat</h3>
+                    <p>Biasanya bisa kambuh karena dipicu oleh kebiasaan makan yang tidak baik.</p>
+                    <a href="#" class="btn">Baca Semua Artikel</a>
+                </div>
+                <div class="article-item">
+                    <img src="3j.jpg" alt="Artikel 2">
+                    <h3>Manfaat Olahraga untuk Kesehatan Mental</h3>
+                    <p>Olahraga tidak hanya baik untuk tubuh, tetapi juga untuk kesehatan mental Anda.</p>
+                    <a href="#" class="btn">Baca Semua Artikel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Konsultasi Online</h3>
+                    <p>Berkonsultasi langsung dengan dokter profesional kapan saja, di mana saja.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Pemeriksaan Kesehatan</h3>
+                    <p>Jadwalkan pemeriksaan kesehatan secara lengkap dan akurat.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Program Diet dan Nutrisi</h3>
+                    <p>Dapatkan panduan diet yang sesuai dengan kebutuhan kesehatan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Sehat Bersama adalah platform kesehatan yang menyediakan informasi medis terpercaya dan layanan konsultasi kesehatan online dengan dokter ahli. Kami berkomitmen untuk membantu masyarakat mencapai kualitas hidup yang lebih baik melalui kesehatan optimal.</p>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SehatBersama. Semua Hak Dilindungi.</p>
+            <div class="social">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

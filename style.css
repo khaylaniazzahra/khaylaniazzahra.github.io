@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4a63b8;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #333 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+.hero {
+    /*background: url('./5j.jpeg') no-repeat center center/cover;
+    color: #fdfafa;
+    margin-top: 50px;
+    height: 50rem;
+    max-width: 73rem;
+    text-align: center;
+    padding-top: 5rem;
+	background-size: cover;
+    background-position: center;
+    padding-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;*/
+    background-image: url('./5j.jpeg'); /* Ganti dengan URL gambar background yang sesuai */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Gambar tetap saat di-scroll */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    /*font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 12rem;*/
+    position: relative;
+    font-size: 48px;
+    z-index: 2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+    /*font-size: 20px;*/
+    position: relative;
+    font-size: 18px;
+    z-index: 2;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.hero .btn {
+    /*display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;*/
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.articles {
+    /*padding: 50px 0;
+    text-align: center;
+    margin-top: 1.5rem;*/ 
+    background-color: #cbe1f5; /* Warna latar belakang (light blue) */
+    padding: 40px 0; /* Padding atas dan bawah untuk ruang lebih */
+} 
+
+.services, .about, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.articles .article-list, .services .service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles .article-item, .services .service-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 30%;
+}
+
+.articles .article-item img, .services .service-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Warna default */
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Warna teks saat di-hover */
+    background-color: #007bff; /* Warna latar belakang saat di-hover */
+    border-radius: 5px; /* Agar sudut tampak melengkung */
+}
+.articles h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Warna teks heading */
+}
+.article-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.article-item {
+    background-color: #fff; /* Warna latar belakang putih untuk tiap artikel */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk memberikan efek 3D */
+    padding: 20px;
+    width: 45%; /* Lebar tiap artikel */
+    margin-bottom: 20px; /* Jarak antar artikel */
+    text-align: center;
+}
+.article-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.article-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007bff; /* Warna judul artikel */
+}
+
+.article-item p {
+    font-size: 16px;
+    color: #555; /* Warna teks paragraf */
+}
+
+/* Tombol baca semua artikel */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px auto 0;
+    display: block;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+}
+/* Overlay gelap untuk membuat teks lebih mudah dibaca */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+    z-index: 1;
+}
+/* Animasi fade in untuk teks */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Animasi zoom-in saat hover */
+}
+/* Mengatur section services */
+.services {
+    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Gradient background */
+    padding: 80px 0; /* Spasi di bagian atas dan bawah */
+    text-align: center;
+}
+/* Styling untuk heading section */
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #00796b; /* Warna teks heading */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Mengatur list layanan */
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Styling untuk item layanan */
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+    padding: 30px;
+    width: 30%; /* Lebar tiap item */
+    margin-bottom: 30px; /* Jarak antar item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tampilan teks di dalam service-item */
+.service-item h3 {
+    font-size: 24px;
+    color: #007bff; /* Warna judul layanan */
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Efek hover untuk service-item */
+.service-item:hover {
+    transform: translateY(-10px); /* Mengangkat sedikit ke atas saat hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%; /* Lebar penuh di layar kecil */
+        margin-bottom: 20px;
+    }
+}
+/* Mengatur section about */
+.about {
+    background: linear-gradient(135deg, #fbe9e7, #ffccbc); /* Gradient warna lembut oranye-pink */
+    padding: 80px 0; /* Padding atas dan bawah */
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+/* Styling untuk heading Tentang Kami */
+.about h2 {
+    font-size: 40px;
+    color: #d84315; /* Warna teks heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1s ease-in-out; /* Animasi kemunculan heading */
+}
+
+/* Styling untuk paragraf */
+.about p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto; /* Agar paragraf berada di tengah */
+    line-height: 1.8; /* Memberikan spasi lebih antar baris */
+    animation: fadeIn 1.2s ease-in-out; /* Animasi kemunculan paragraf */
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tambahkan elemen dekoratif */
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('about-pattern.png'); /* Gambar dekoratif, misalnya pola */
+    background-size: cover;
+    opacity: 0.1; /* Transparansi gambar dekoratif */
+    z-index: 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 32px;
+    }
+    
+    .about p {
+        font-size: 16px;
+    }
+}
+/* Mengatur section contact */
+.contact {
+    background: linear-gradient(135deg, #c8e6c9, #2b0ead); /* Gradient hijau lembut */
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Styling untuk heading Kontak Kami */
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1s ease-in-out; /* Animasi kemunculan heading */
+}
+
+/* Styling untuk form */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Background form transparan */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+}
+
+/* Mengatur input dan textarea */
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Styling hover untuk input dan textarea */
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form textarea:focus {
+    border-color: #66bb6a; /* Warna border saat focus */
+    outline: none;
+}
+
+/* Mengatur textarea */
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Styling tombol submit */
+.contact form .btn {
+    background-color: #43a047;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect untuk tombol */
+.contact form .btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05); /* Animasi zoom-in saat hover */
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 32px;
+    }
+    
+    .contact form {
+        padding: 20px;
+    }
+}
+
+
+
